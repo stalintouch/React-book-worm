@@ -39,12 +39,12 @@ class LoginForm extends Component {
       <Form onSubmit={this.onSubmit}>
         <Form.Field error={!!errors.email}>
           <label htmlFor="email">Email</label>
-          <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            placeholder="example@example.com"  
-            value ={data.email}
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@example.com"
+            value={data.email}
             onChange={this.onChange}
           />
           {errors.email && <InlineError text={errors.email} />}
